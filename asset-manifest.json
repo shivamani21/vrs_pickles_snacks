@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vrs_pickles_snacks/static/css/main.9e6625ea.css",
+    "main.js": "/vrs_pickles_snacks/static/js/main.efe4c116.js",
+    "index.html": "/vrs_pickles_snacks/index.html",
+    "main.9e6625ea.css.map": "/vrs_pickles_snacks/static/css/main.9e6625ea.css.map",
+    "main.efe4c116.js.map": "/vrs_pickles_snacks/static/js/main.efe4c116.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e6625ea.css",
+    "static/js/main.efe4c116.js"
+  ]
+}
