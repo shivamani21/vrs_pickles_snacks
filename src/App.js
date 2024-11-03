@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import ProductSection from './components/ProductSection';
+import ProductList from './components/ProductList';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Banner />
+      <ProductSection />
+      <main className="product-listings">
+        <section id="nonveg" className="product-category">
+          <h2>Non-Veg Pickles</h2>
+          <ProductList category="nonveg" />
+        </section>
+        <section id="veg" className="product-category">
+          <h2>Veg Pickles</h2>
+          <ProductList category="veg" />
+        </section>
+        <section id="snacks" className="product-category">
+          <h2>Snacks</h2>
+          <ProductList category="snacks" />
+        </section>
+        <section id="sweets" className="product-category">
+          <h2>Sweets</h2>
+          <ProductList category="sweets" />
+        </section>
+      </main>
+      <Footer />
     </div>
   );
 }

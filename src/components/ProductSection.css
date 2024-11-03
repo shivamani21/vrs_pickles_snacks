@@ -1,0 +1,23 @@
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Reduced gap to 10px */
+  padding: 10px; /* Reduced padding */
+}
+
+.product-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 5px; /* Reduced padding to minimize space */
+  width: calc(100% - 10px); /* Adjusted to match new gap */
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-sizing: border-box; /* Includes padding and border in total width */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
