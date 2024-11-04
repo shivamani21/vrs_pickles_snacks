@@ -5,10 +5,10 @@ import './Banner.css';
 function Banner() {
   return (
     <div className="banner">
-      <img src="/images/banner.jpg" alt="Banner" className="banner-image" />
-      <button className="shop-now">Shop Now</button>
+      <img src={`${process.env.PUBLIC_URL}/images/20offbanner.jpg`} alt="Banner" className="banner-image" />
     </div>
   );
 }
+
 
 export default Banner;

@@ -1,23 +1,26 @@
 .banner {
-    position: relative;
-    text-align: center;
-  }
-  
-  .banner-image {
-    width: 100%;
-    height: 20vh;
-  }
-  
-  .shop-now-btn {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #ff7f50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2em;
-  }
-  
+  position: relative;
+  text-align: center;
+  margin-top: 20px; /* Space between header and banner */
+}
+
+.banner-image {
+  width: 100%;
+  height: 20vh;
+  border-radius: 10px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a lifted effect */
+}
+
+.shop-now-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px; /* Rounded edges for button */
+}

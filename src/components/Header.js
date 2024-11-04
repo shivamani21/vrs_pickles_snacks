@@ -1,17 +1,30 @@
 // src/components/Header.js
 import React from 'react';
 import './Header.css';
+import { FaSearch, FaMapMarkerAlt, FaShoppingCart } from 'react-icons/fa';
 
 function Header() {
   return (
     <header className="header">
       <div className="header-logo">
-        <h1>VRS Pickles</h1>
+        <img src={`${process.env.PUBLIC_URL}/images/vrslotus.jpg`} alt="VRS Pickles Logo" />
+        <h4>Vrs Pickles</h4>
       </div>
-      <div className="header-right">
+      
+      <div className="header-search">
         <input type="text" placeholder="Search..." className="search-bar" />
+        <FaSearch className="search-icon" />
+      </div>
+
+      <div className="header-right">
+        <div className="header-item address">
+          <FaMapMarkerAlt className="icon" />
+          <span>123 Main St, City</span>
+        </div>
+        <button className="header-button">
+          <FaShoppingCart className="icon" /> Cart
+        </button>
         <button className="header-button">Login/Signup</button>
-        <button className="header-button">Cart</button>
       </div>
     </header>
   );

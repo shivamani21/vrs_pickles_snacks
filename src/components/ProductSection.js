@@ -4,13 +4,12 @@ import './ProductSection.css';
 
 function ProductSection() {
   const products = [
-    { name: 'Non-Veg Pickles', img: '/images/nonvegpickles.jpg', sectionId: 'nonveg' },
-    { name: 'Veg Pickles', img: '/images/vegpickles.jpg', sectionId: 'veg' },
-    { name: 'Snacks', img: '/images/snacks.jpg', sectionId: 'snacks' },
-    { name: 'Sweets', img: '/images/sweets.jpg', sectionId: 'sweets' }
+    { name: 'Non-Veg Pickles', img: `${process.env.PUBLIC_URL}/images/nonvegpickles.jpg`, sectionId: 'nonveg' },
+    { name: 'Veg Pickles', img: `${process.env.PUBLIC_URL}/images/vegpickles.jpg`, sectionId: 'veg' },
+    { name: 'Snacks', img: `${process.env.PUBLIC_URL}/images/snacks.jpg`, sectionId: 'snacks' },
+    { name: 'Sweets', img: `${process.env.PUBLIC_URL}/images/sweets.jpg`, sectionId: 'sweets' }
   ];
 
-  // Scroll to the section based on the section ID
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -26,8 +25,10 @@ function ProductSection() {
           key={index}
           onClick={() => scrollToSection(product.sectionId)}
         >
-          <img src={product.img} alt={product.name} className="product-image" />
-          <h3>{product.name}</h3>
+          <div className="product-image-container">
+            <img src={product.img} alt={product.name} className="product-image" />
+            <h3 className="product-name">{product.name}</h3>
+          </div>
         </div>
       ))}
     </div>
