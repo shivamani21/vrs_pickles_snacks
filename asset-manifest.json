@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vrs_pickles_snacks/static/css/main.9e6625ea.css",
-    "main.js": "/vrs_pickles_snacks/static/js/main.efe4c116.js",
+    "main.css": "/vrs_pickles_snacks/static/css/main.a6f54347.css",
+    "main.js": "/vrs_pickles_snacks/static/js/main.7d3d115a.js",
     "index.html": "/vrs_pickles_snacks/index.html",
-    "main.9e6625ea.css.map": "/vrs_pickles_snacks/static/css/main.9e6625ea.css.map",
-    "main.efe4c116.js.map": "/vrs_pickles_snacks/static/js/main.efe4c116.js.map"
+    "main.a6f54347.css.map": "/vrs_pickles_snacks/static/css/main.a6f54347.css.map",
+    "main.7d3d115a.js.map": "/vrs_pickles_snacks/static/js/main.7d3d115a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e6625ea.css",
-    "static/js/main.efe4c116.js"
+    "static/css/main.a6f54347.css",
+    "static/js/main.7d3d115a.js"
   ]
 }
