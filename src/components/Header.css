@@ -73,3 +73,23 @@
 .icon {
   font-size: 1.2em;
 }
+.header-button.wishlist {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #e7e2e1; /* A reddish color for the love icon */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header-button.wishlist .icon {
+  font-size: 18px;
+}
+
+/* Optional hover effect */
+.header-button.wishlist:hover {
+  color: #d9b74f; /* Darker red on hover */
+  transform: scale(1.1);
+}

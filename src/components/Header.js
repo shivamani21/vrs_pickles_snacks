@@ -1,7 +1,6 @@
-// src/components/Header.js
 import React from 'react';
 import './Header.css';
-import { FaSearch, FaMapMarkerAlt, FaShoppingCart } from 'react-icons/fa';
+import { FaSearch, FaMapMarkerAlt, FaShoppingCart, FaHeart } from 'react-icons/fa';
 
 function Header() {
   return (
@@ -21,6 +20,9 @@ function Header() {
           <FaMapMarkerAlt className="icon" />
           <span>123 Main St, City</span>
         </div>
+        <button className="header-button wishlist">
+          <FaHeart className="icon" /> Wishlist
+        </button>
         <button className="header-button">
           <FaShoppingCart className="icon" /> Cart
         </button>
